@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
 
-d = datetime(2020, 12, 25, 3, 0, 0)
-ret = d + timedelta(days=10)
+d = datetime(2023, 2, 7, 0, 0, 0)
+ret = d + timedelta(days=30)
 print(ret)
