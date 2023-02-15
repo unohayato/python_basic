@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+import date
 #デコレータ使わないver
 class User:
   def __init__(self, name, age, gender, address, birthday):
@@ -12,3 +12,10 @@ class User:
     
 
 #デコレータ使うver
+@dataclass
+class User2:
+  name: str
+  age: int
+  gender: str
+  address: int
+  birthday: date
