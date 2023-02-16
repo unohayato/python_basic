@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import dataclasses
 
 """
 #デコレータ使わないver
@@ -23,4 +24,6 @@ class User2:
   
 user1 = User2("sato", 10, "man")
 user2 = User2("sato", 10, "man")
-print(user1 == user2)
+
+result = dataclasses.asdict(user1)
+print(result)
