@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 """
 #デコレータ使わないver
@@ -19,7 +19,9 @@ class User2:
   name: str
   age: int
   gender: str
+  items: list = field(default_factory=lambda: ['note', 'pen'])
   
 user = User2("sato", 10, "man")
 print(user.name)
 print(user.age)
+print(user.items)
