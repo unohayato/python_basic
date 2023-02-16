@@ -21,7 +21,6 @@ class User2:
   gender: str
   items: list = field(default_factory=lambda: ['note', 'pen'])
   
-user = User2("sato", 10, "man")
-print(user.name)
-print(user.age)
-print(user.items)
+user1 = User2("sato", 10, "man")
+user2 = User2("sato", 10, "man")
+print(user1 == user2)
