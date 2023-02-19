@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/unohayato/Documents/python/python_basic/trace/trace3.py", line 13, in main
+    trace2.func1()
+  File "/Users/unohayato/Documents/python/python_basic/trace/trace2.py", line 2, in func1
+    func2()
+  File "/Users/unohayato/Documents/python/python_basic/trace/trace2.py", line 5, in func2
+    result = 1 / 0
+ZeroDivisionError: division by zero
+
