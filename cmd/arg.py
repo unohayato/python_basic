@@ -8,12 +8,18 @@ if __name__ == '__main__':
   #   type=int,
   #   nargs=3
   #   )
+  
   # args = parser.parse_args()
   # print(args.numbers)
+  # parser = argparse.ArgumentParser()
+  # parser.add_argument(
+  #   'language',
+  #   choices=['English', 'Japanese']
+  # )
+  # args = parser.parse_args()
+  # print(args.language)
+  
   parser = argparse.ArgumentParser()
-  parser.add_argument(
-    'language',
-    choices=['English', 'Japanese']
-  )
+  parser.add_argument('-t', '--text', default='xxx', nargs='*')
   args = parser.parse_args()
-  print(args.language)
+  print(args.text)
