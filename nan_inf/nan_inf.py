@@ -5,8 +5,12 @@ import sys
 
 # print(float('inf'))
 
-import math
+# import math
 
-x = float('inf') - float('inf')
-print(x)
-print(math.isnan(x))
+# x = float('inf') - float('inf')
+# print(x)
+# print(math.isnan(x))
+
+x = None
+if x is None:
+  print('xはNoneです')
